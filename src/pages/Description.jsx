@@ -44,6 +44,7 @@ export default function Description() {
             <button className="bg-slate-900 text-white px-8 py-1 font-semibold rounded-sm">
               Delete
             </button>
+            <button>Welcome to store</button>
           </div>
         </div>
       </div>
