@@ -45,6 +45,7 @@ export default function Description() {
               Delete
             </button>
             <button>Welcome to store</button>
+            <div>Don't know what to add...</div>
           </div>
         </div>
       </div>
