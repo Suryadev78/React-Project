@@ -5,7 +5,7 @@ import axios from "axios";
 export default function Description() {
   const [searchParams] = useSearchParams();
   const id = searchParams.get("id");
-  console.log(id);
+  // console.log(id);
   const [items, setItems] = useState([]);
   //   import { useNavigate, useSearchParams } from "react-router-dom";
   // import axios from "axios";
@@ -44,8 +44,6 @@ export default function Description() {
             <button className="bg-slate-900 text-white px-8 py-1 font-semibold rounded-sm">
               Delete
             </button>
-            <button>Welcome to store</button>
-            <div>Don't know what to add...</div>
           </div>
         </div>
       </div>

@@ -6,12 +6,12 @@ import { useNavigate } from "react-router-dom";
 export default function Navbar() {
   const navigate = useNavigate();
   const product = useRecoilValue(productData);
-  console.log(product);
+  // console.log(product);
   let distinct_category =
     product && product.reduce((acc, cv) => [...acc, cv.category], []);
   distinct_category = [...new Set(distinct_category)];
 
-  console.log(distinct_category);
+  // console.log(distinct_category);
 
   return (
     <div className="w-[15%] bg-white h-screen">
