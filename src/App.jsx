@@ -8,11 +8,11 @@ function App() {
   const { search, pathname } = useLocation();
   return (
     <>
-      {pathname != "/" && search.length > 0}
       <div>
         <div className="flex justify-center font-semibold cursor-pointer bg-gray-300">
           Go to Home
         </div>
+        <button>Home</button>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />}></Route>

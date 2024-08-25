@@ -5,23 +5,12 @@ import axios from "axios";
 export default function Description() {
   const [searchParams] = useSearchParams();
   const id = searchParams.get("id");
-  // console.log(id);
   const [items, setItems] = useState([]);
-  //   import { useNavigate, useSearchParams } from "react-router-dom";
-  // import axios from "axios";
-  // import { Link } from "react-router-dom";
-  // function Send() {
-  //   const [searchParams] = useSearchParams();
-  //   const userId = searchParams.get("id");
-  //   const userName = searchParams.get("name");
-  //   const [balance, setBalance] = useState(0);
   useEffect(() => {
     axios
       .get(`https://fakestoreapi.com/products/${id}`)
       .then((res) => setItems(res.data));
   }, []);
-  // console.log(items);
-
   return (
     <div className="w-full h-screen bg-zinc-300  flex justify-center items-center">
       <div className="w-2/3 h-3/4  flex justify-between rounded-md shadow-2xl px-20  items-center gap-5 bg-white">
