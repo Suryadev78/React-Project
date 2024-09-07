@@ -56,8 +56,6 @@ export default function Home() {
               <p className="text-center text-xs">{i.title}</p>
               <div>Maahol hai</div>
               <div>Pta nhi kya ho rha</div>
-
-              <div>Bro iam not building any projects</div>
             </div>
           ))}
       </div>
