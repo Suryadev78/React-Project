@@ -54,10 +54,6 @@ export default function Home() {
                 />
               </div>
               <p className="text-center text-xs">{i.title}</p>
-              <div>Maahol hai</div>
-              <div>Wo toh hai</div>
-              <div>Wo toh hai</div>
-              <div>Wo toh hai</div>
             </div>
           ))}
       </div>
